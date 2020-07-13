@@ -11,6 +11,7 @@ configure :development do
 end
 
 $redis = Redis.new
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0'
 
 get '/' do
   url = params[:url]
@@ -19,7 +20,7 @@ get '/' do
   else
     data = $redis.get(url)
     if data.nil?
-      response = HTTP.follow.get(url)
+      response = HTTP.follow.headers('Accept-Language' => 'en-US', 'User-Agent' => USER_AGENT).get(url)
       open_graph = OGP::OpenGraph.new(response.to_s)
       url = response.uri.to_s
       data = open_graph.data
@@ -30,8 +31,6 @@ get '/' do
     end
     json(data: data, url: url)
   end
-rescue OGP::MissingAttributeError
-  json(error: "No og: attributes found for this website")
 rescue StandardError => e
-  json(error: e.message)
+  json(error: e.message, url: url)
 end
