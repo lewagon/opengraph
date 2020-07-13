@@ -26,7 +26,7 @@ For performance reason, the response is **cached for a day**. If you want to hav
     "image": "https://dwj199mwkel52.cloudfront.net/assets/core/social/home-card-82f54b75841da25d31c2e99d673e68152942dfd3d7275380508a63f0d951b484.jpg",
     "description": "Change your life, learn to code. Le Wagon is ranked as the world's best coding bootcamp and has enabled thousands of people to change their careers."
   },
-  "url":"https://www.lewagon.com/"
+  "url": "https://www.lewagon.com/"
 }
 ```
 
