@@ -1,13 +1,28 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
     ansi (1.5.0)
     ast (2.4.1)
     backports (3.18.1)
-    faraday (1.0.1)
-      multipart-post (>= 1.2, < 3)
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
+    ffi (1.13.1)
+    ffi-compiler (1.0.1)
+      ffi (>= 1.0.0)
+      rake
+    http (4.4.1)
+      addressable (~> 2.3)
+      http-cookie (~> 1.0)
+      http-form_data (~> 2.2)
+      http-parser (~> 1.2.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    http-form_data (2.3.0)
+    http-parser (1.2.1)
+      ffi-compiler (>= 1.0, < 2.0)
     multi_json (1.15.0)
-    multipart-post (2.1.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.5.2)
@@ -16,11 +31,13 @@ GEM
       ruby-ll (~> 2.1)
     ogp (0.4.0)
       oga (~> 2.15)
+    public_suffix (4.0.5)
     puma (4.3.5)
       nio4r (~> 2.0)
     rack (2.2.3)
     rack-protection (2.0.8.1)
       rack
+    rake (13.0.1)
     redis (4.2.1)
     ruby-ll (2.1.2)
       ansi
@@ -39,12 +56,15 @@ GEM
       sinatra (= 2.0.8.1)
       tilt (~> 2.0)
     tilt (2.0.10)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.7)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  faraday
+  http
   ogp
   puma
   redis
