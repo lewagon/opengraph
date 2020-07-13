@@ -14,7 +14,7 @@ For performance reason, the response is **cached for a day**. If you want to hav
 
 ### Example
 
-:point_right: [https://opengraph.lewagon.com/?url=https://www.lewagon.com](https://opengraph.lewagon.com/?url=https://www.lewagon.com)
+:point_right: https://opengraph.lewagon.com/?url=https://www.lewagon.com
 
 ```json
 {
