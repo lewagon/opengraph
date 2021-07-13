@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.7.0)
+    addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     ansi (1.5.0)
     ast (2.4.1)
@@ -31,7 +31,7 @@ GEM
       ruby-ll (~> 2.1)
     ogp (0.4.0)
       oga (~> 2.15)
-    public_suffix (4.0.5)
+    public_suffix (4.0.6)
     puma (4.3.8)
       nio4r (~> 2.0)
     rack (2.2.3)
