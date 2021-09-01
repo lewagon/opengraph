@@ -1,59 +1,58 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.7.0)
+    addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     ansi (1.5.0)
-    ast (2.4.1)
-    backports (3.18.1)
+    ast (2.4.2)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
-    ffi (1.13.1)
+    ffi (1.15.3)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
-    http (4.4.1)
+    http (5.0.1)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
       http-form_data (~> 2.2)
-      http-parser (~> 1.2.0)
-    http-cookie (1.0.3)
+      llhttp-ffi (~> 0.3.0)
+    http-cookie (1.0.4)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
-    http-parser (1.2.1)
-      ffi-compiler (>= 1.0, < 2.0)
+    llhttp-ffi (0.3.1)
+      ffi-compiler (~> 1.0)
+      rake (~> 13.0)
     multi_json (1.15.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
-    nio4r (2.5.7)
-    oga (2.15)
+    nio4r (2.5.8)
+    oga (3.3)
       ast
       ruby-ll (~> 2.1)
-    ogp (0.4.0)
-      oga (~> 2.15)
-    public_suffix (4.0.5)
-    puma (4.3.8)
+    ogp (0.5.0)
+      oga (~> 3.3)
+    public_suffix (4.0.6)
+    puma (5.4.0)
       nio4r (~> 2.0)
     rack (2.2.3)
-    rack-protection (2.0.8.1)
+    rack-protection (2.1.0)
       rack
-    rake (13.0.1)
-    redis (4.2.1)
+    rake (13.0.6)
+    redis (4.4.0)
     ruby-ll (2.1.2)
       ansi
       ast
-    ruby2_keywords (0.0.2)
-    sinatra (2.0.8.1)
+    ruby2_keywords (0.0.5)
+    sinatra (2.1.0)
       mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.8.1)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
       tilt (~> 2.0)
-    sinatra-contrib (2.0.8.1)
-      backports (>= 2.8.2)
+    sinatra-contrib (2.1.0)
       multi_json
       mustermann (~> 1.0)
-      rack-protection (= 2.0.8.1)
-      sinatra (= 2.0.8.1)
+      rack-protection (= 2.1.0)
+      sinatra (= 2.1.0)
       tilt (~> 2.0)
     tilt (2.0.10)
     unf (0.1.4)
@@ -72,7 +71,7 @@ DEPENDENCIES
   sinatra-contrib
 
 RUBY VERSION
-   ruby 2.6.6p146
+   ruby 3.0.2p107
 
 BUNDLED WITH
-   2.1.4
+   2.2.26

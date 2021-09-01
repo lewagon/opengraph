@@ -6,7 +6,6 @@ require "redis"
 
 configure :development do
   require "sinatra/reloader"
-  require "pry-byebug"
 end
 
 $redis = Redis.new
